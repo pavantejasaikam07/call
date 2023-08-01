@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 const mysql = require('mysql');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
