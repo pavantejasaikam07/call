@@ -38,12 +38,14 @@
     "styled-components": "^5.3.1",
     "web-vitals": "^1.1.2"
   },
-  "scripts": {
+   "scripts": {
     "start": "react-scripts start",
     "build": "npm install && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-server": "node server.js"
   },
+
   "eslintConfig": {
     "extends": [
       "react-app",
