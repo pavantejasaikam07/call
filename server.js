@@ -22,13 +22,14 @@ app.use(
     saveUninitialized: false,
   })
 );
-
+require('dotenv').config();
 // MySQL database connection
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'call',
+  host: process.env.MYSQL_ADDON_HOST,
+  user: process.env.MYSQL_ADDON_USER,
+  password: process.env.MYSQL_ADDON_PASSWORD,
+  database: process.env.MYSQL_ADDON_DB,
+  port: process.env.MYSQL_ADDON_PORT,
   multipleStatements: true,
 });
 
